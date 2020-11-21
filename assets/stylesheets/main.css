@@ -1,0 +1,42 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+}
+
+.junk {
+  background-color: purple;
+  color: orange;
+}
+
+.hero {
+  background: url("/assets/images/marek-piwnicki-wxLZQ3vCSYs-unsplash@0.5x.jpg");
+}
+
+#compass .cls-1 {
+  fill: #d8d8d8;
+  opacity: 0.5;
+}
+
+#compass .cls-1,
+#compass .cls-3 {
+  stroke: #d8d8d8;
+}
+
+#compass .cls-2 {
+  font-size: 77.44px;
+  font-family: Helvetica-Bold, Helvetica;
+  font-weight: 700;
+}
+
+#compass .cls-3 {
+  fill: none;
+}
+
+#compass .cls-4 {
+  fill: #ffce00;
+}
+
+.compass {
+  width: 100px;
+}
+/*# sourceMappingURL=main.css.map */
