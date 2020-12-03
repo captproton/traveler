@@ -1,8 +1,140 @@
+@import "typography.css";
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+/* structure: grid with items placed */
 .container {
   display: -ms-grid;
   display: grid;
+  grid-template-columns: 128px auto 128px;
+  grid-template-rows: repeat(12, 50vh);
 }
 
+.container .hero {
+  grid-column: 1/-4;
+  grid-row: 1/3;
+  z-index: 10;
+}
+
+.container .traveler {
+  grid-column: 2/3;
+  grid-row: 2/5;
+  z-index: 100;
+}
+
+.container .discover-hero {
+  grid-column: 1/-4;
+  grid-row: 5/7;
+  z-index: 10;
+}
+
+
+.container .ds-left {
+  grid-column: 1/2;
+  grid-row: 11/13;
+  z-index: 100;  
+}
+
+.container .ds-right {
+  grid-column: -2/-1;
+  grid-row: 11/13;
+  z-index: 100;    
+}
+
+.container .discover {
+  grid-column: 2/3;
+  grid-row: 5/9;
+  z-index: 100;
+}
+
+.container .footer-hero {
+  grid-column: 1/-1;
+  grid-row: 10/13;
+  z-index: 10;
+}
+
+.container .fs-left {
+  grid-column: 1/2;
+  grid-row: 10/13;
+  z-index: 100;  
+}
+
+.container .fs-right {
+  grid-column: -2/-1;
+  grid-row: 10/13;
+  z-index: 100;    
+}
+
+.container .footer {
+  grid-column: 2/3;
+  grid-row: 10/13;
+  z-index: 100;
+}
+
+.traveler {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(22, 12.5vh);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* grid assignments */
+.intro-video {
+  grid-column: 1/11;
+  grid-row: 1/4;
+  z-index: 5;
+
+}
+
+.intro-video img {
+  width: 100%;
+}
+
+.hamburger-nav  {
+  grid-column-start: 9;
+  grid-row-start: 2;
+}
+
+.full-logo {
+  grid-column: 1/4;
+  grid-row: 2/4;
+}
+
+.worldmap {
+  grid-column: 1/11;
+  grid-row-start: 8;
+}
+
+.traveler h1 {
+  grid-column: 1/-1;
+  grid-row-start: 8;
+  text-align: center;
+}
+
+.become-a-traveler {
+}
+.left-paragraph {
+  grid-row-start: 9;
+  grid-column: 2/4;
+}
+
+.right-paragraph {
+  grid-row: 9/9;
+  grid-column: -2/-4;
+}
+.choose-your-destination {
+}
+
+.slideshow {
+  grid-column: 1/-1;
+  grid-row-start: 12;
+  
+}
+/* .compass {
+  grid-column: 1/3;
+  grid-row-start: 5;
+} */
 .junk {
   background-color: purple;
   color: orange;
@@ -10,11 +142,13 @@
 
 .hero {
   background: url("/assets/images/marek-piwnicki-wxLZQ3vCSYs-unsplash@0.5x.jpg");
+  background-size: cover;
+  width: 100vw;
 }
 
 #compass .cls-1 {
   fill: #d8d8d8;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 #compass .cls-1,
@@ -39,4 +173,469 @@
 .compass {
   width: 100px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.shade {
+  width: 100vw;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: white;
+}
+
+.hero p {
+  color: white;
+  font-size: 1.3em;
+  margin: 0;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 3rem;
+  font-style: italic;
+}
+
+.poppins {
+      font-family: "Poppins", "Arial", sans-serif;
+}
+.helvetica {
+  font-family: "Helvetica", "Arial", sans-serif;
+
+}
+.hamburger-menu {
+  fill: white;
+  background-color: #ffce00;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.national-geo-full-logo .name {
+  fill: black;
+}
+
+/** shoulders of discover inner section **/
+.container .discover-shoulder {
+  background-image: linear-gradient(  
+    rgba(255,250,250, 0.7),  
+    rgba(250,250,250, 1.0));
+    background-size: cover;
+  }
+
+/** discover, discover-hero **/
+.discover-hero {
+  background: url("/assets/images/mackenzie-wiebe-khspbCWsT1U-unsplash@0.25x.jpg");
+  background-size: cover;
+  width: 100vw;
+}
+
+.discover {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(20, 12.5vh);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.discover .white-shade-fade-from-top {
+  grid-column: 1/-1;
+  grid-row: 1/6;
+}
+
+.discover .white-shade-fade-from-btm {
+  grid-column: 1/-1;
+  grid-row: 7/9;
+}
+
+.discover .regions {
+  grid-column: 1/-1;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+  z-index: 5;
+
+}
+
+.discover h1 {
+  grid-column: 1/-1;
+  grid-row: 8/9;
+  align-self: center;
+  justify-self: center;
+  z-index: 5;
+
+}
+
+.discover .where-to-travel {
+  grid-column: 1/-1;
+  grid-row: 9/10;
+  align-self: center;
+  justify-self: center;
+}
+
+.discover .region-info {
+  grid-column: 1/-1;
+  grid-row: 11/12;
+  width: 100%;
+}
+.discover .place-info {
+  grid-column: 3/-3;
+  grid-row: 13/18;
+}
+
+.place-info {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, minmax(64px, 1fr));
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+
+}
+.place-blurb {
+  grid-column: 8/-2;
+  grid-row: 2/-3;
+
+}
+
+.place-image {
+  grid-column: 2/-4;
+  grid-row: 1/-1;
+
+}
+
+.more-info-link {
+  grid-column-start: 2;
+  grid-row-start: 6;
+  background-color: coral;
+}
+
+.more-info-button {
+  grid-column-start: 3;
+  grid-row-start: 6;
+  background-color: cornflowerblue;
+}
+
+.place-info .region-name {
+  grid-column-start: 3;
+  grid-row: 2/3;
+  writing-mode: vertical-rl;
+}
+
+/* footer layout */
+footer {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(14, 12.5vh);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+footer .worldmap-footer {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width: 100%;
+}
+
+footer .left-paragraph {
+  grid-row-start: 2;
+  grid-column: 2/4;
+}
+
+footer .right-paragraph {
+  grid-row: 2/2;
+  grid-column: -2/-4;
+}
+
+.discover .where-to-travel {
+  margin: 5em;
+  text-align: center;
+}
+
+
+.white-shade-fade-from-top {
+  background-image: linear-gradient( rgba(255,250,250,1) 40%,
+  rgba(255,250,250,0.75) 20%, 
+  rgba(255,250,250,0.0));
+}
+
+.white-shade-fade-from-btm {
+  background-image: linear-gradient(
+    rgba(255,250,250,0.75),
+    rgba(255,250,250,0.87),
+    rgba(255,250,250,1) 
+  );
+}
+
+.discover .region-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.region-info .menu {
+  align-self: center;
+  justify-self: center;
+}
+
+.discover .region-info li {
+  float: left;
+}
+
+.discover .region-info li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.discover .region-info li a:hover {
+  background-color: #111111;
+}
+
+.place-blurb {
+background-color: orange;
+justify-items: center
+}
+
+.place-blurb .title {
+  font-size: 2em;
+  margin: 10px 50px 20px 10px;
+}
+
+.place-blurb .region-summary {
+  margin: 10px 20px 20px 30px;
+  font-size: 0.8rem;
+}
+
+
+
+/* worldmap with compass */
+.worldmap {
+  width: 100%;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#worldmap .cls-1 {
+          fill: none;
+          stroke: #d8d8d8;
+          stoke-width: 2.5pt;
+}
+#worldmap #polarcircle {
+          fill: rgb(209, 204, 204);
+          opacity: 0.4;
+}
+#worldmap #polarring {
+          stroke: rgb(209, 204, 204);
+          stoke-width: 1.5pt;
+}
+
+#worldmap .cls-2 {
+font-size: 18px;
+font-family: Helvetica-Bold, Helvetica;
+font-weight: 700;
+}
+
+#worldmap #placemarker2 {
+fill: yellow;
+stroke: #ffce00;
+
+}
+#worldmap #cross-hairs {
+fill: #ffce00;
+stroke: #ffce00;
+
+}
+#worldmap #directions {
+fill: #000;
+stroke: #000;
+
+}
+#worldmap #_2nd_directions {
+fill: #ffce00;
+stroke: #ffce00;
+
+}
+
+/* global regions links */
+.regions {
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 95vw;
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+}
+
+.regions .region {
+  height: 80px;
+  flex: 1;
+  margin: 10px;
+  cursor: pointer;
+  transition: flex-grow .4s ease, margin 0.3s ease, opacity .3s ease;
+  position: relative;
+/*   background: gray; */
+}
+
+.regions .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #888;
+  cursor: pointer;
+  margin: 0.5vw 1vw;  
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.regions.show-back .back {
+  opacity: 1;
+  z-index: 1;
+}
+
+.regions .region .region-button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0) scale(1);
+  max-width: 100%;
+  width: 100px;
+  height: 100%;
+  z-index: 1;
+  transition: opacity .3s ease, transform .3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.regions .region.hidden {
+  flex-grow: 0.00001;
+  opacity: 0;
+  margin: 10px 0;
+}
+
+.regions .region.hide-button .region-button {
+  display: none;
+}
+
+.regions .region .region-button:after {
+  content: attr(data-location-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #aaa;
+  transition: fill .3s ease;
+}
+
+.regions .region .region-button svg {
+  width: 100%;
+  height: 100%;
+  fill: #ccc;
+  transition: fill .3s ease;
+}
+
+.region:hover .region-button svg, .regions .region.active .region-button svg {
+  fill: #34404E;
+}
+
+.regions .region.active .region-button {
+  opacity: 0;
+  transform: translate(-50%, -20px) scale(0);
+}
+
+.region:hover .region-button:after, .regions .region.active .region-button:after {
+  color: #34404E;
+}
+
+.regions .region .locations {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+  background: #fff;
+  padding: 20px;
+}
+
+.regions .region .locations .location-row {
+  width: 33.33%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  opacity: 0;
+  transition: height .3s ease, opacity .3s ease;
+  overflow: hidden;
+}
+
+.regions .region.active .locations .location-row {
+  height: 30px;
+  opacity: 0.8;
+}
+
+.regions .region .locations .location-row .title {
+  white-space: no-wrap;
+}
+
+.regions .region .locations .location-row .flag, .duration-select .flag {
+  position: relative; 
+  top: 4px;
+  width: 40px;
+  height: 23px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+/* finish regions */
+/* start national geo logo */
+.full-logo {
+  width: 400px;
+  height: 200px;
+  margin: 0;
+}
+#national-geo-full .st0{display:none;}
+#national-geo-full 	.st1{display:inline;}
+#national-geo-full 	.st2{fill-rule:evenodd;clip-rule:evenodd;fill: none;}
+#national-geo-full	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#F7D730;}
+#national-geo-full 	.st4{fill-rule:evenodd;clip-rule:evenodd;}
+#national-geo-full 	.st5{display:inline;fill-rule:evenodd;clip-rule:evenodd;}
+#national-geo-full  .name {fill: white;}
+/* finish national geo logo */
+
+.footer-hero {
+  /* background: no-repeat url("/assets/images/zhangjiajie-national-forest-park-china-cliffs-mountains-fog-1080P-wallpaper-middle-size.jpg"); */
+  /* background-size: cover; */
+  background: url("/assets/images/zhangjiajie-national-forest-park-china-cliffs-mountains-fog-1080P-wallpaper-middle-size.jpg");
+  background-size: cover;
+  width: 100vw;
+
+}
+
+/** shoulders of discover inner section **/
+.footer-shoulder {
+  background-image: rgba(255,250,250, 0.6);
+  background-size: cover;
+
+}
+
+

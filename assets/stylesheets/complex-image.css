@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+.compass {
+        width: 50vmin;
+
+}
+.compass .cls-1 {
+    fill: green;
+    stroke: green;
+}
+.compass .cls-2 {
+    fill: green;
+    stroke: green;
+}
+.compass .cls-3 {
+    fill: green;
+    stroke: green;
+}
+.compass .cls-4 {
+    fill: green;
+    stroke: green;
+}
+
+.worldmap {
+    fill: red;
+}
+
+.africa {
+    fill: purple;
+    background-color: royalblue;
+}
+.svg-container {
+    background-color: saddlebrown;
+}
+
+.nat-geo-font {
+    font-family: 'Mukta', sans-serif;
+}
